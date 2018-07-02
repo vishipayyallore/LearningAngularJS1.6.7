@@ -1,8 +1,20 @@
 {
     "name": "FirstSample",
     "version": "1.0.0",
+    "description": "First Sample",
+    "author": "",
+    "license": "MIT",
     "dependencies": {
         "angular": "~1.6.7",
         "angular-route": "~1.6.7"
-    }
+    },
+    "scripts": {
+        "start": "npm run",
+        "tsc": "tsc"
+    },
+    "devDependencies": {
+        "angular": "~1.6.7",
+        "angular-route": "~1.6.7"
+    },
+    "main": "app.js"
 }
