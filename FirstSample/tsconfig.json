@@ -3,7 +3,8 @@
         "module": "none",
         "target": "ES5"
     },
-    "files": [
-        "app.ts"
+    "exclude": [
+        "node_modules",
+        "wwwroot"
     ]
 }
