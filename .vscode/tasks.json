@@ -1,0 +1,13 @@
+{
+    "tasks": [
+        {
+            "type": "npm",
+            "script": "start",
+            "path": "FirstSample/",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

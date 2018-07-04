@@ -1,7 +1,8 @@
-class Hello {
-
-    constructor() {
-        console.log("Hello World!");
-    }
-
+module app {
+	var main = angular.module("AngularJsDemoApp",
+		["homeModule",
+			"contactModule"])
+		.constant("appSettings", {
+            serverPath: "http://localhost:36592/"
+        });
 }

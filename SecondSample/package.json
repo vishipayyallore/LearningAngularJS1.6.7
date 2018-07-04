@@ -1,0 +1,19 @@
+{
+  "name": "SecondSample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node_modules/.bin/lite-server"
+  },
+  "devDependencies": {
+    "angular": "~1.6.7",
+    "angular-route": "~1.6.7",
+    "lite-server": "^2.4.0",
+    "tsd": "^0.6.5"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
