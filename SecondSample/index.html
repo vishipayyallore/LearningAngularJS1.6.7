@@ -6,7 +6,7 @@
   <title>Hello World AngularJS application</title>
 </head>
 
-<body ng-app='app'>
+<body ng-app='app' ng-init = "countries = [{locale:'en-US',name:'United States'}, {locale:'en-GB',name:'United Kingdom'}, {locale:'en-FR',name:'France'}]">
   <h1>AngularJS 1.6.7 application</h1>
   <section ng-controller="HelloController">
     <h4>AngularJS Greeting</h4>
@@ -15,6 +15,15 @@
     <p>Hello {{name}}!</p>
     <p>Hello <span ng-bind = "name"></span>!</p>
   </section>
+  <div>
+    <p>List of Countries with locale:</p>
+      
+         <ol>
+            <li ng-repeat = "country in countries">
+               {{ 'Country: ' + country.name + ', Locale: ' + country.locale }}
+            </li>
+         </ol>
+  </div>
 </body>
 
 <script data-require="angular.js@1.6.0" data-semver="1.6.0" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.js"></script>
