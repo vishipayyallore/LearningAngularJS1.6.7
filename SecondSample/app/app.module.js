@@ -4,5 +4,8 @@
     HelloController.$inject = ['$scope'];
     function HelloController($scope) {
         $scope.name = 'World';
+        $scope.student = {
+            firstName: 'Shiva'
+        };
     }
 })();
