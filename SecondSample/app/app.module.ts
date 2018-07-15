@@ -13,9 +13,8 @@
       lastName: 'Sai',
 
       getFullName: function() {
-        return $scope.student.firstName + $scope.student.lastName;
+        return this.firstName + this.lastName;
       }
-
     };
 
   }
