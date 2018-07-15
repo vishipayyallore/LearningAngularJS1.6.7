@@ -9,7 +9,13 @@
     $scope.name = 'World';
 
     $scope.student = {
-      firstName: 'Shiva'
+      firstName: 'Shiva',
+      lastName: 'Sai',
+
+      getFullName: function() {
+        return $scope.student.firstName + $scope.student.lastName;
+      }
+
     };
 
   }
