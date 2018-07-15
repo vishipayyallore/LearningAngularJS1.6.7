@@ -12,12 +12,20 @@
     <section ng-controller="HelloController">
       <label for="name">Type your Name:</label>
       <input id=name type="text" ng-model="name">
-      <p>Hello {{name}}!</p>
-      <p>Hello
-        <span ng-bind="name"></span>!</p>
+      <p>Hello {{name}}! ||
+        <span style="color: darkmagenta" ng-bind="name"></span>!</p>
+    </section>
+  </div>
+  <div style="border: solid; border-color: darkorange" ng-controller="HelloController">
+    <label for="firstName">Type your First Name:</label>
+    <input id=firstName type="text" ng-model="student.firstName">
+    <br>
+    <label for="lasttName">Type your Last Name:</label>
+    <input id=lastName type="text" ng-model="student.lastName">
+    <p>
       <strong style="color: chocolate">Hi {{student.firstName}}</strong> your full name is :
       <span>{{student.getFullName()}}</span>
-    </section>
+    </p>
   </div>
   <div>
     <strong>List of Countries with locale:</strong>
