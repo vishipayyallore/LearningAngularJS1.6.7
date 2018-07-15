@@ -17,6 +17,10 @@
       }
     };
 
+    $scope.getName = function() {
+      return this.name;
+    };
+
   }
 
 })();

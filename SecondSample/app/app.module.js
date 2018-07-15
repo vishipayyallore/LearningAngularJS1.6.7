@@ -11,5 +11,8 @@
                 return this.firstName + ' ' + this.lastName;
             }
         };
+        $scope.getName = function () {
+            return this.name;
+        };
     }
 })();
