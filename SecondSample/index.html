@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>AngularJS 1.6.7 application</title>
 </head>
 
-<body ng-app='app' bgcolor="#ABCDEF"
-   ng-init = "countries = [{locale:'en-US',name:'United States'}, {locale:'en-GB',name:'United Kingdom'}, {locale:'en-FR',name:'France'}]">
+<body ng-app='app' bgcolor="#ABCDEF" ng-init="countries = [{locale:'en-US',name:'United States'}, {locale:'en-GB',name:'United Kingdom'}, {locale:'en-FR',name:'France'}]">
   <h1>AngularJS 1.6.7 Sample Application</h1>
-<hr>
-<div style="border: solid; border-color: blue">
-  <section ng-controller="HelloController">
-    <label for="name">Type your name here:</label>
-    <input id=name type="text" ng-model="name">
-    <p>Hello {{name}}!</p>
-    <p>Hello <span ng-bind = "name"></span>!</p>
-    <strong style="color: chocolate">Hi {{student.firstName}}</strong> your full name is : <span>{{student.getFullName()}}</span>
-  </section>
-
-</div>
+  <hr>
+  <div style="border: solid; border-color: blue">
+    <section ng-controller="HelloController">
+      <label for="name">Type your Name:</label>
+      <input id=name type="text" ng-model="name">
+      <p>Hello {{name}}!</p>
+      <p>Hello
+        <span ng-bind="name"></span>!</p>
+      <strong style="color: chocolate">Hi {{student.firstName}}</strong> your full name is :
+      <span>{{student.getFullName()}}</span>
+    </section>
+  </div>
   <div>
     <strong>List of Countries with locale:</strong>
     <table border="1" cellpadding="4" cellspacing="0" style="border-color: blueviolet">
-      <tr ng-repeat = "country in countries">
+      <tr ng-repeat="country in countries">
         <td>
           {{ 'Country: ' + country.name + ', Locale: ' + country.locale }}
         </td>
       </tr>
     </table>
-         <ol>
-            <li ng-repeat = "country in countries">
-               {{ 'Country: ' + country.name + ', Locale: ' + country.locale }}
-            </li>
-         </ol>
+    <ol>
+      <li ng-repeat="country in countries">
+        {{ 'Country: ' + country.name + ', Locale: ' + country.locale }}
+      </li>
+    </ol>
   </div>
 </body>
 
