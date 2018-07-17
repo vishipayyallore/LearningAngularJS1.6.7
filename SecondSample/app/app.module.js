@@ -1,7 +1,6 @@
 (function () {
     angular.module('app', [])
-        .controller('HelloController', HelloController)
-        .controller('StudentController', StudentController);
+        .controller('HelloController', HelloController);
     HelloController.$inject = ['$scope'];
     function HelloController($scope) {
         $scope.name = 'Shiva';
@@ -15,10 +14,5 @@
         $scope.getName = function () {
             return this.name;
         };
-    }
-    StudentController.$inject = ['$scope'];
-    function StudentController($scope) {
-        $scope.firstName = 'New Shiva';
-        $scope.lastName = 'Shiva';
     }
 })();
