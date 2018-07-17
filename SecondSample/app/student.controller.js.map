@@ -1,0 +1,1 @@
+{"version":3,"file":"student.controller.js","sourceRoot":"","sources":["student.controller.ts"],"names":[],"mappings":"AAAA,IAAI,GAAG,GAAG,OAAO,CAAC,MAAM,CAAC,KAAK,EAAE,EAAE,CAAC,CAAC;AAEpC,GAAG,CAAC,UAAU,CAAC,mBAAmB,EAAE,iBAAiB,CAAC,CAAC;AAEvD,iBAAiB,CAAC,OAAO,GAAG,CAAC,QAAQ,CAAC,CAAC;AAEvC,2BAA2B,MAAM;IAC7B,MAAM,CAAC,SAAS,GAAG,OAAO,CAAC;AAG/B,CAAC"}
