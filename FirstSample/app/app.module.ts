@@ -1,12 +1,7 @@
-(function () {
+"use strict";
 
-    angular.module('app', [])
-      .controller('HelloController', HelloController);
-  
-    HelloController.$inject = ['$scope'];
-  
-    function HelloController($scope) {
-      $scope.myModel = 'World';
-    }
-  
-  })();
+// define the `phonecatApp` module
+angular.module("sampleApp", [
+  "firstPage"
+])
+.controller("FirstController", firstPage.FirstController);

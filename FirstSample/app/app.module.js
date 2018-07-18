@@ -1,8 +1,7 @@
-(function () {
-    angular.module('app', [])
-        .controller('HelloController', HelloController);
-    HelloController.$inject = ['$scope'];
-    function HelloController($scope) {
-        $scope.myModel = 'World';
-    }
-})();
+"use strict";
+// define the `phonecatApp` module
+angular.module("sampleApp", [
+    "firstPage"
+])
+    .controller("FirstController", firstPage.FirstController);
+//# sourceMappingURL=app.module.js.map

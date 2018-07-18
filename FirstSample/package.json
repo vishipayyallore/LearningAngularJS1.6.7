@@ -4,12 +4,9 @@
   "description": "First Sample",
   "author": "",
   "license": "MIT",
-  "dependencies": {
-    "angular": "~1.6.7",
-    "angular-route": "~1.6.7",
-    "lite-server": "^2.4.0",
-    "tsd": "^0.6.5"
-  },
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node_modules/.bin/lite-server",
@@ -19,9 +16,12 @@
     "angular": "~1.6.7",
     "angular-route": "~1.6.7",
     "lite-server": "^2.4.0",
-    "tsd": "^0.6.5"
+    "tsd": "^0.6.5",
+    "angular-animate": "1.5.x",
+    "angular-mocks": "1.5.x",
+    "angular-resource": "1.5.x",
+    "angular-route": "1.5.x"
   },
-  "main": "index.js",
   "keywords": [],
   "author": "",
   "license": "ISC"
