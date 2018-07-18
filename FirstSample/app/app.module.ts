@@ -4,4 +4,4 @@
 angular.module("sampleApp", [
   "firstPage"
 ])
-.controller("FirstController", firstPage.FirstController);
+.controller("FirstController");

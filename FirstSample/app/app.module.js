@@ -3,5 +3,5 @@
 angular.module("sampleApp", [
     "firstPage"
 ])
-    .controller("FirstController", firstPage.FirstController);
+    .controller("FirstController");
 //# sourceMappingURL=app.module.js.map
