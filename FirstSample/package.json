@@ -1,11 +1,9 @@
 {
   "name": "FirstSample",
   "version": "1.0.0",
-  "description": "First Sample",
-  "author": "",
-  "license": "MIT",
-  "version": "1.0.0",
   "description": "",
+  "author": "",
+  "license": "ISC",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,16 +11,14 @@
     "tsc": "tsc"
   },
   "devDependencies": {
+    "@types/angular": "^1.6.48",
     "angular": "~1.6.7",
-    "angular-route": "~1.6.7",
-    "lite-server": "^2.4.0",
-    "tsd": "^0.6.5",
     "angular-animate": "1.5.x",
     "angular-mocks": "1.5.x",
     "angular-resource": "1.5.x",
-    "angular-route": "1.5.x"
+    "angular-route": "1.5.x",
+    "lite-server": "^2.4.0",
+    "tsd": "^0.6.5"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": []
 }
