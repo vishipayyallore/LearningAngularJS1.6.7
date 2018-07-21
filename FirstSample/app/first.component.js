@@ -1,14 +1,7 @@
 "use strict";
-// import * as angular from "angular";
-// register `phoneList` component, along with its associated controller and template
-angular.
-    module("sampleApp").
-    component("firstPage", {
-    templateUrl: "firstPage.template.html",
-    controller: ["FirstController",
-        function FirstController() {
-            this.firstName = "Shiva";
-        }
-    ]
-});
+angular.module("sampleApp", []).controller('PersonController', PersonController);
+PersonController.$inject = ['$scope'];
+function PersonController($scope) {
+    $scope.age = '25';
+}
 //# sourceMappingURL=first.component.js.map
