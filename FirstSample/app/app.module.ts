@@ -1,7 +1,9 @@
 "use strict";
 
+var mainApp = angular.module("sampleApp", []);
+
 // define the `phonecatApp` module
-angular.module("sampleApp", []).controller('HelloController', HelloController);
+mainApp.controller('HelloController', HelloController);
 
 HelloController.$inject = ['$scope'];
 
