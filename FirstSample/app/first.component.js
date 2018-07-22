@@ -1,4 +1,4 @@
-var mainApp = angular.module("sampleApp", []);
+var mainApp = angular.module("sampleApp1", []);
 mainApp.controller('studentController', function ($scope) {
     $scope.student = {
         firstName: "Mahesh",

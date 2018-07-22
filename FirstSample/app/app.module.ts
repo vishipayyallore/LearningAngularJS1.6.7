@@ -2,7 +2,6 @@
 
 var mainApp = angular.module("sampleApp", []);
 
-// define the `phonecatApp` module
 mainApp.controller('HelloController', HelloController);
 
 HelloController.$inject = ['$scope'];
@@ -24,3 +23,4 @@ function HelloController($scope) {
   };
 
 }
+
