@@ -1,14 +1,8 @@
-var mainApp = angular.module("sampleApp1", []);
+import * as angular from "../node_modules/angular/angular";
 
-mainApp.controller('studentController', function($scope) {
-  $scope.student = {
-     firstName: "Mahesh",
-     lastName: "Parashar",
-     
-     fullName: function() {
-        var studentObject;
-        studentObject = $scope.student;
-        return studentObject.firstName + " " + studentObject.lastName;
-     }
-  };
-});
+
+export class StudentController {
+  public studentName : string = "Ash";
+}
+
+angular.module("sampleApp", []).controller('StudentController', StudentController);

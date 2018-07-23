@@ -1,13 +1,10 @@
-var mainApp = angular.module("sampleApp1", []);
-mainApp.controller('studentController', function ($scope) {
-    $scope.student = {
-        firstName: "Mahesh",
-        lastName: "Parashar",
-        fullName: function () {
-            var studentObject;
-            studentObject = $scope.student;
-            return studentObject.firstName + " " + studentObject.lastName;
-        }
-    };
-});
+import * as angular from "../node_modules/angular/angular";
+var StudentController = /** @class */ (function () {
+    function StudentController() {
+        this.studentName = "Ash";
+    }
+    return StudentController;
+}());
+export { StudentController };
+angular.module("sampleApp", []).controller('StudentController', StudentController);
 //# sourceMappingURL=first.component.js.map
