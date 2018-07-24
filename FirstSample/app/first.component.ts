@@ -1,8 +1,5 @@
-import * as angular from "../node_modules/angular/angular";
-
+"use strict";
 
 export class StudentController {
   public studentName : string = "Ash";
 }
-
-angular.module("sampleApp", []).controller('StudentController', StudentController);

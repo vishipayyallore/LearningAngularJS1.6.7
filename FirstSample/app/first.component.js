@@ -1,4 +1,4 @@
-import * as angular from "../node_modules/angular/angular";
+"use strict";
 var StudentController = /** @class */ (function () {
     function StudentController() {
         this.studentName = "Ash";
@@ -6,5 +6,4 @@ var StudentController = /** @class */ (function () {
     return StudentController;
 }());
 export { StudentController };
-angular.module("sampleApp", []).controller('StudentController', StudentController);
 //# sourceMappingURL=first.component.js.map
