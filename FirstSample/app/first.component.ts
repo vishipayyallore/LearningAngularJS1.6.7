@@ -1,5 +1,5 @@
 "use strict";
 
-export class StudentController {
+class StudentController {
   public studentName : string = "Ash";
 }

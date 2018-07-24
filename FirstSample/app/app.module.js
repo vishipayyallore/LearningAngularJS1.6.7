@@ -15,4 +15,5 @@ function HelloController($scope) {
         return this.name;
     };
 }
+mainApp.controller("StudentController", StudentController);
 //# sourceMappingURL=app.module.js.map

@@ -24,3 +24,4 @@ function HelloController($scope) {
 
 }
 
+mainApp.controller("StudentController", StudentController);

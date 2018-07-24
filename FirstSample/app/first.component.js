@@ -5,5 +5,4 @@ var StudentController = /** @class */ (function () {
     }
     return StudentController;
 }());
-export { StudentController };
 //# sourceMappingURL=first.component.js.map
