@@ -1,27 +1,24 @@
-"use strict";
 
-var mainApp = angular.module("sampleApp", []);
+module sampleApp {
 
-mainApp.controller('HelloController', HelloController);
+  "use strict";
 
-HelloController.$inject = ['$scope'];
+  export class HelloController {
 
-function HelloController($scope) {
-  $scope.name = 'Shiva';
+    public static $inject = ["$scope"];
 
-  $scope.student = {
-    firstName: 'Shiva',
-    lastName: 'Sai',
-
-    getFullName: function () {
-      return this.firstName + " " + this.lastName;
+    constructor($scope: ng.IScope) {
     }
-  };
 
-  $scope.getName = function () {
-    return this.name;
-  };
+    this.$scope.firstName = "Shiva";
+    this.$scope.age = 25;
 
+  }
+
+  var mainApp = angular.module("sampleApp", [])
+    .controller("HelloController", HelloController);
+    
 }
 
-mainApp.controller("StudentController", StudentController);
+
+

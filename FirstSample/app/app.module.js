@@ -1,19 +1,16 @@
-"use strict";
-var mainApp = angular.module("sampleApp", []);
-mainApp.controller('HelloController', HelloController);
-HelloController.$inject = ['$scope'];
-function HelloController($scope) {
-    $scope.name = 'Shiva';
-    $scope.student = {
-        firstName: 'Shiva',
-        lastName: 'Sai',
-        getFullName: function () {
-            return this.firstName + " " + this.lastName;
+var sampleApp;
+(function (sampleApp) {
+    "use strict";
+    var HelloController = /** @class */ (function () {
+        function HelloController($scope) {
         }
-    };
-    $scope.getName = function () {
-        return this.name;
-    };
-}
-mainApp.controller("StudentController", StudentController);
+        HelloController.$inject = ["$scope"];
+        return HelloController;
+    }());
+    sampleApp.HelloController = HelloController;
+    this.$scope.firstName = "Shiva";
+    this.$scope.age = 25;
+})(sampleApp || (sampleApp = {}));
+var mainApp = angular.module("sampleApp", [])
+    .controller("HelloController", HelloController);
 //# sourceMappingURL=app.module.js.map

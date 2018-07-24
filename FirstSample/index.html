@@ -18,13 +18,13 @@
     <section ng-controller="HelloController">
       <h4>AngularJS Greeting</h4>
       <label for="name">Type your name here:</label>
-      <input id="name" type="text" ng-model="student.firstName" />
-      <p>Hello {{student.firstName}}!</p>
-      <p>Hello <span ng-bind = "name"></span>!</p>
+      <input id="name" type="text" ng-model="firstName" />
+      <p>Hello {{firstName}}!</p>
+      <p>Hello <span ng-bind = "$scope.firstName"></span>!</p>
     </section>
 
     <div ng-controller="HelloController">
-      <strong>Age: {{age}}</strong>
+      <strong>Age: {{$scope.age}}</strong>
     </div>
 
   </body>
