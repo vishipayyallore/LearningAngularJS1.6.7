@@ -10,8 +10,8 @@ interface IFirstComponent {
 class FirstComponent implements IFirstComponent {
   firstName = "Shiva";
   age = 25;
-  constructor($scope) {
-    $scope.lastName = "Sai";
+  constructor() {
+    this.firstName = "Sai";
   }
 
 }

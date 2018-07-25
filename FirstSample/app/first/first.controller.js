@@ -1,9 +1,9 @@
 "use strict";
 var FirstComponent = /** @class */ (function () {
-    function FirstComponent($scope) {
+    function FirstComponent() {
         this.firstName = "Shiva";
         this.age = 25;
-        $scope.lastName = "Sai";
+        this.firstName = "Sai";
     }
     return FirstComponent;
 }());
