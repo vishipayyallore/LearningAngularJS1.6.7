@@ -1,8 +1,10 @@
+"use strict";
 
+angular.module("sampleApp", []);
+  
 module sampleApp {
 
-  "use strict";
-
+  
   export class HelloController {
 
     public static $inject = ["$scope"];
@@ -15,7 +17,7 @@ module sampleApp {
 
   }
 
-  var mainApp = angular.module("sampleApp", [])
+  var mainApp = 
     .controller("HelloController", HelloController);
     
 }
