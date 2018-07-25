@@ -6,4 +6,5 @@ TypeScript Definition manager for DefinitelyTyped to get the strong typed advant
 
 tsd install angular --resolve --save
 
+typings install dt~angular --save
 
