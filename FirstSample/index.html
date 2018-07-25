@@ -14,16 +14,16 @@
 
   <body bgcolor="cornflowerblue" style="color: navy">
     <h1>Hello World AngularJS application</h1>
-    <section ng-controller="FirstComponent">
+    <section ng-controller="FirstComponent as vm">
       <h4>AngularJS Greeting</h4>
       <label for="name">Type your name here:</label>
-      <input id="name" type="text" ng-model="firstName" />
-      <p>Hello {{firstName}}!</p>
-      <p>Hello <span ng-bind = "firstName"></span>!</p>
+      <input id="name" type="text" ng-model="vm.firstName" />
+      <p>Hello {{vm.firstName}}!</p>
+      <p>Hello <span ng-bind = "vm.firstName"></span>!</p>
     </section>
 
-    <div ng-controller="FirstComponent">
-      <strong>Age: {{age}}</strong>
+    <div ng-controller="FirstComponent as vm">
+      <strong>Age: {{vm.age}}</strong>
     </div>
 
   </body>
