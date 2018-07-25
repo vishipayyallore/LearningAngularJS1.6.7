@@ -8,12 +8,11 @@ interface IFirstComponent {
 
 
 class FirstComponent implements IFirstComponent {
-
+  firstName = "Shiva";
+  age = 25;
   constructor($scope) {
+    $scope.lastName = "Sai";
   }
-
-  $scope.firstName = "Shiva";
-  $scope.age = 25;
 
 }
 

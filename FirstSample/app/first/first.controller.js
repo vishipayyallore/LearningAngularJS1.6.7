@@ -3,6 +3,7 @@ var FirstComponent = /** @class */ (function () {
     function FirstComponent($scope) {
         this.firstName = "Shiva";
         this.age = 25;
+        $scope.lastName = "Sai";
     }
     return FirstComponent;
 }());
