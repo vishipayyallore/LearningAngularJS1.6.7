@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="sampleApp" >
+
+  <head>
+    <title>First AngularJS application</title>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.js"></script>
+    <script src="node_modules/angular-resource/angular-resource.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
+    <script src="app/app.module.js"></script>
+    <script src="app/hello/hello.controller.js"></script>
+  </head>
+
+  <body bgcolor="cornflowerblue" style="color: navy">
+    <h1>Hello World AngularJS application</h1>
+    <section ng-controller="HelloComponent as vm">
+      <label for="name">Type your name here:</label>
+      <input id="name" type="text" ng-model="vm.firstName" />
+      <p>Hello {{vm.firstName}}!</p>
+      <p>Hello <span ng-bind = "vm.firstName"></span>!</p>
+    </section>
+
+    <div ng-controller="HelloComponent as vm">
+      <strong>Age: {{vm.age}}</strong>
+    </div>
+
+  </body>
+
+</html>
