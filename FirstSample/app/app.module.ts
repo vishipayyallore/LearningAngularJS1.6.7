@@ -1,3 +1,5 @@
-"use strict";
+module app {
+    "use strict";
 
-angular.module("sampleApp", []);
+    angular.module("sampleApp", ["firstModule", "studentModule"]);
+}

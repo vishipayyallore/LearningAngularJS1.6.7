@@ -1,23 +1,26 @@
-"use strict";
+module app {
 
-interface IFirstComponent {
-  firstName: string;
-  age: number;
-}
+  "use strict";
 
-
-
-class FirstComponent implements IFirstComponent {
-  firstName = "Shiva";
-  age = 25;
-  constructor() {
-    this.firstName = "Sai";
+  interface IFirstComponent {
+    firstName: string;
+    age: number;
   }
 
+  export class FirstComponent implements IFirstComponent {
+    firstName = "Shiva";
+    age = 25;
+    constructor() {
+      this.firstName = "Sai";
+    }
+
+  }
+
+  FirstComponent.$inject = ["$scope"];
+
+
+  angular.module("firstModule", [])
+    .controller("FirstComponent", FirstComponent);
+
+
 }
-
-FirstComponent.$inject = ["$scope"];
-
-var app = angular.module("sampleApp", []);
-
-app.controller("FirstComponent", FirstComponent);

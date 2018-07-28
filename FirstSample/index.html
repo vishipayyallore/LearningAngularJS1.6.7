@@ -1,31 +1,34 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="sampleApp" >
+<html lang="en" ng-app="sampleApp">
 
-  <head>
-    <title>First AngularJS application</title>
-    <!--<script data-require="angular.js@1.6.7" data-semver="1.6.7" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.js"></script>-->
-    <script src="node_modules/angular/angular.js"></script>
-    <script src="node_modules/angular-animate/angular-animate.js"></script>
-    <script src="node_modules/angular-resource/angular-resource.js"></script>
-    <script src="node_modules/angular-route/angular-route.js"></script>
-    <script src="app/app.module.js"></script>
-    <script src="app/first/first.controller.js"></script>
-  </head>
+<head>
+  <title>First AngularJS application</title>
+  <!--<script data-require="angular.js@1.6.7" data-semver="1.6.7" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.js"></script>-->
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="node_modules/angular-animate/angular-animate.js"></script>
+  <script src="node_modules/angular-resource/angular-resource.js"></script>
+  <script src="node_modules/angular-route/angular-route.js"></script>
+  <script src="app/app.module.js"></script>
+  <script src="app/first/first.controller.js"></script>
+  <script src="app/student/student.controller.js"></script>
+</head>
 
-  <body bgcolor="cornflowerblue" style="color: navy">
-    <h1>Hello World AngularJS application</h1>
-    <section ng-controller="FirstComponent as vm">
-      <h4>AngularJS Greeting</h4>
-      <label for="name">Type your name here:</label>
-      <input id="name" type="text" ng-model="vm.firstName" />
-      <p>Hello {{vm.firstName}}!</p>
-      <p>Hello <span ng-bind = "vm.firstName"></span>!</p>
-    </section>
+<body bgcolor="cornflowerblue" style="color: navy">
+  <h1>Hello World AngularJS application</h1>
+  <section ng-controller="FirstComponent as vm">
+    <h4>AngularJS Greeting</h4>
+    <label for="name">Type your name here:</label>
+    <input id="name" type="text" ng-model="vm.firstName" />
+    <p>(VM binding) Hello {{vm.firstName}}!</p>
+    <p>(ng-bind)Hello
+      <span ng-bind="vm.firstName"></span>!</p>
+    <strong>First Component Age: {{vm.age}}</strong>
+  </section>
 
-    <div ng-controller="FirstComponent as vm">
-      <strong>Age: {{vm.age}}</strong>
-    </div>
+  <div ng-controller="StudentController as vm1">
+    <p>Student {{vm1.firstName}}</p>
+  </div>
 
-  </body>
+</body>
 
 </html>
