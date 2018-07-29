@@ -8,3 +8,7 @@ tsd install angular --resolve --save
 
 typings install dt~angular --save
 
+npm install gulp --save
+npm install del
+npm install gulp-typescript --save-dev
+npm install typescript --save-dev
