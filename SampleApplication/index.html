@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="sampleApp">
 
 <head>
     <title>Sample Application</title>
@@ -83,6 +83,9 @@
     <div style="padding-left:16px">
         <h2>Responsive Topnav Example</h2>
         <p>Resize the browser window to see how it works.</p>
+        <div ng-controller="ProductsComponent as vm">
+            <strong>Price: {{vm.price}}</strong>
+          </div>
     </div>
 
     <script>
@@ -94,7 +97,14 @@
                 x.className = "topnav";
             }
         }
+
     </script>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.js"></script>
+    <script src="node_modules/angular-resource/angular-resource.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
+    <script src="app/app.module.js"></script>
+    <script src="app/products/products.controller.js"></script>
 
 </body>
 
