@@ -11,7 +11,7 @@
     "tsc": "tsc"
   },
   "devDependencies": {
-    "@types/angular": "^1.6.48",
+    "@types/angular": "^1.6.50",
     "angular": "~1.6.7",
     "angular-animate": "1.5.x",
     "angular-mocks": "1.5.x",
@@ -21,7 +21,6 @@
   },
   "keywords": [],
   "dependencies": {
-    "@types/angular": "^1.6.49",
     "@types/jquery": "^3.3.5"
   }
 }

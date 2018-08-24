@@ -9,6 +9,7 @@
     "tsc": "tsc"
   },
   "devDependencies": {
+    "@types/angular": "^1.6.50",
     "angular": "~1.6.7",
     "angular-route": "~1.6.7",
     "lite-server": "^2.4.0",
@@ -17,7 +18,5 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@types/angular": "^1.6.49"
-  }
+  "dependencies": {}
 }
