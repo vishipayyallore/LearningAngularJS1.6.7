@@ -7,6 +7,7 @@ var application;
             function ProductsComponent() {
                 this.name = "Shiva";
                 this.price = 25.98;
+                this.date = "01-Aug-2018";
                 this.name = "New TV";
             }
             return ProductsComponent;

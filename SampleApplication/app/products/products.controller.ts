@@ -9,6 +9,7 @@ module application.ProductsComponent {
     class ProductsComponent implements IProductsComponent {
       name = "Shiva";
       price = 25.98;
+      date = "01-Aug-2018";
 
       constructor() {
         this.name = "New TV";

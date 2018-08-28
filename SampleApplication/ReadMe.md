@@ -12,3 +12,7 @@ npm install typescript --save-dev
 
 npm install --save-dev @types/angular
 npm install http-server --save-dev
+
+Execute the Project
+gulp
+npm start
